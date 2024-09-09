@@ -1,0 +1,12 @@
+.mat-toolbar {
+    margin-bottom: 10px;
+    width: auto;
+    mat-toolbar-row {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+mat-form-field {
+    padding: 5px;
+}

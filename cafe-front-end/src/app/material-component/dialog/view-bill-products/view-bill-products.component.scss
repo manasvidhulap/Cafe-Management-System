@@ -1,0 +1,133 @@
+// .mat-toolbar {
+//   margin-bottom: 0;
+//   width: auto;
+//   margin-bottom: 10px;
+//   mat-toolbar-row {
+//     display: flex;
+//     justify-content: space-between;
+// }
+// }
+
+//   mat-form-field{
+//       padding: 5px;
+//   }
+
+//   .float-right{
+//       float: right;
+//   }
+  
+//   mat-card{
+//       padding: 20px;
+//   }
+  
+//   table {
+//       width: 100%;
+//     }
+
+
+//     #customers {
+//       font-family: Arial, Helvetica, sans-serif;
+//       border-collapse: collapse;
+//       width: 100%;
+//     }
+    
+//     #customers td, #customers th {
+//       border: 1px solid #ddd;
+//       padding: 8px;
+//     }
+    
+//     #customers th {
+//       padding-top: 12px;
+//       padding-bottom: 12px;
+//       text-align: left;
+//       background-color: #04AA6D;
+//       color: white;
+//     }
+
+
+/* Styles for the mat-toolbar */
+mat-toolbar {
+  background-color: #8c3fb5; /* Primary color for the toolbar background */
+  color: white; /* Text color for the toolbar */
+  .mat-toolbar-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .spacer {
+    flex: 1;
+  }
+  .mat-dialog-close {
+    color: white; /* Close button icon color */
+  }
+}
+
+/* Styles for mat-dialog-content */
+.mat-dialog-content {
+  padding: 24px; /* Padding inside the dialog content */
+  .mat-typography {
+    font-family: 'Roboto', sans-serif; /* Ensure consistent typography */
+  }
+}
+
+/* Styles for the customer info table */
+#customers {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px; /* Margin below the table */
+  td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd; /* Light border for separation */
+  }
+  b {
+    color: #333; /* Bold text color */
+  }
+}
+
+/* Styles for the responsive material table */
+.responsive_table {
+  overflow-x: auto; /* Enable horizontal scrolling for responsiveness */
+}
+
+table.mat-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for elevation effect */
+}
+
+th.mat-header-cell {
+  background-color: #3f51b5; /* Header background color */
+  color: white; /* Header text color */
+  padding: 12px; /* Padding inside header cells */
+  text-align: left; /* Align header text to the left */
+  font-weight: bold; /* Bold text for headers */
+}
+
+td.mat-cell {
+  padding: 12px; /* Padding inside data cells */
+  border-bottom: 1px solid #ddd; /* Light border for cell separation */
+}
+
+/* Styles for table rows */
+tr.mat-header-row {
+  height: 48px; /* Header row height */
+}
+
+tr.mat-row {
+  height: 48px; /* Data row height */
+}
+
+/* Styles for sticky header */
+tr.mat-header-row.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Additional styling for responsive design */
+@media (max-width: 768px) {
+  .responsive_table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+  }
+}

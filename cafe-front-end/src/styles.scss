@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-icon {
+    &.icon-item-sidebar {
+      margin: 3px 3px -5px 0;
+    }
+  }
+
+mat-toolbar{
+    &.topbar{
+      justify-content: space-between;
+    }
+    mat-toolbar-row {
+      display: flex;
+      justify-content: space-between;
+  }
+}
